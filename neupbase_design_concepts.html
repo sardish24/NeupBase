@@ -1,0 +1,243 @@
+
+<style>
+  .nb-section { margin-bottom: 2.5rem; }
+  .nb-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 0.75rem; }
+  .nb-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; }
+  .nb-chip { display: inline-block; font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; margin: 2px; }
+  .nb-screen { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1rem; border: 0.5px solid var(--color-border-tertiary); }
+  .nb-mockup-bar { height: 6px; border-radius: 3px; }
+  .nb-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 4px 10px; border-radius: 20px; border: 0.5px solid var(--color-border-secondary); color: var(--color-text-secondary); }
+  .tag-purple { background: #EEEDFE; color: #3C3489; }
+  .tag-teal { background: #E1F5EE; color: #085041; }
+  .tag-amber { background: #FAEEDA; color: #633806; }
+  .tag-coral { background: #FAECE7; color: #712B13; }
+  .tag-blue { background: #E6F1FB; color: #0C447C; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  h2.nb-h { font-size: 16px; font-weight: 500; margin: 0 0 0.25rem; color: var(--color-text-primary); }
+  p.nb-sub { font-size: 13px; color: var(--color-text-secondary); margin: 0 0 1rem; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .stat-n { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .stat-l { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
+</style>
+
+<div style="padding: 0.5rem 0;">
+
+  <div class="nb-section">
+    <div class="nb-label">Design direction</div>
+    <div class="grid2">
+      <div class="nb-card" style="border-left: 3px solid #7F77DD; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;">
+        <h2 class="nb-h">Option A — Academic minimal</h2>
+        <p class="nb-sub">Clean whites, generous whitespace, serif accents. Feels like a premium planner or Notion-meets-Canvas.</p>
+        <div>
+          <span class="nb-chip tag-purple">Soft purples</span>
+          <span class="nb-chip tag-teal">Teal accents</span>
+          <span class="nb-chip" style="background:var(--color-background-secondary);color:var(--color-text-secondary);">Off-white bg</span>
+          <span class="nb-chip tag-blue">Info blues</span>
+        </div>
+      </div>
+      <div class="nb-card" style="border-left: 3px solid #1D9E75; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;">
+        <h2 class="nb-h">Option B — Focused dark mode</h2>
+        <p class="nb-sub">Dark bg, glowing progress rings, neon-free but high contrast. Feels like a "deep work" app.</p>
+        <div>
+          <span class="nb-chip tag-teal">Teal highlights</span>
+          <span class="nb-chip tag-amber">Amber warnings</span>
+          <span class="nb-chip" style="background:#2C2C2A;color:#D3D1C7;">Charcoal bg</span>
+          <span class="nb-chip tag-coral">Coral alerts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nb-section">
+    <div class="nb-label">Key screens to design</div>
+    <div class="grid3">
+      <div class="nb-card" style="text-align:center;">
+        <div style="font-size:28px; color:#7F77DD; margin-bottom:8px;"><i class="ti ti-layout-dashboard"></i></div>
+        <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Daily brief</div>
+        <div style="font-size:11px; color:var(--color-text-tertiary); margin-top:4px;">Today's tasks, prep score, streak</div>
+      </div>
+      <div class="nb-card" style="text-align:center;">
+        <div style="font-size:28px; color:#1D9E75; margin-bottom:8px;"><i class="ti ti-upload"></i></div>
+        <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Document vault</div>
+        <div style="font-size:11px; color:var(--color-text-tertiary); margin-top:4px;">Upload, parse status, topic tree</div>
+      </div>
+      <div class="nb-card" style="text-align:center;">
+        <div style="font-size:28px; color:#BA7517; margin-bottom:8px;"><i class="ti ti-calendar-week"></i></div>
+        <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Weekly schedule</div>
+        <div style="font-size:11px; color:var(--color-text-tertiary); margin-top:4px;">30–60 min session blocks</div>
+      </div>
+      <div class="nb-card" style="text-align:center;">
+        <div style="font-size:28px; color:#D4537E; margin-bottom:8px;"><i class="ti ti-chart-line"></i></div>
+        <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Exam prep score</div>
+        <div style="font-size:11px; color:var(--color-text-tertiary); margin-top:4px;">Recharts analytics & trends</div>
+      </div>
+      <div class="nb-card" style="text-align:center;">
+        <div style="font-size:28px; color:#378ADD; margin-bottom:8px;"><i class="ti ti-message-chatbot"></i></div>
+        <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">AI chatbot</div>
+        <div style="font-size:11px; color:var(--color-text-tertiary); margin-top:4px;">Ask questions about your docs</div>
+      </div>
+      <div class="nb-card" style="text-align:center;">
+        <div style="font-size:28px; color:#888780; margin-bottom:8px;"><i class="ti ti-settings"></i></div>
+        <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Settings / profile</div>
+        <div style="font-size:11px; color:var(--color-text-tertiary); margin-top:4px;">Courses, notifications, auth</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nb-section">
+    <div class="nb-label">Daily brief mockup sketch</div>
+    <div class="nb-screen">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+        <div>
+          <div style="font-size:15px; font-weight:500; color:var(--color-text-primary);">Good morning 👋</div>
+          <div style="font-size:12px; color:var(--color-text-secondary);">Friday, May 29 · 3 tasks due today</div>
+        </div>
+        <div style="background:#EEEDFE; color:#3C3489; font-size:12px; font-weight:500; padding:6px 14px; border-radius:20px;">Prep score: 74%</div>
+      </div>
+      <div class="grid4" style="margin-bottom:12px;">
+        <div style="background:var(--color-background-primary); border-radius:var(--border-radius-md); padding:10px; border:0.5px solid var(--color-border-tertiary);">
+          <div class="stat-n">3</div><div class="stat-l">Due today</div>
+        </div>
+        <div style="background:var(--color-background-primary); border-radius:var(--border-radius-md); padding:10px; border:0.5px solid var(--color-border-tertiary);">
+          <div class="stat-n" style="color:#1D9E75;">12</div><div class="stat-l">Completed</div>
+        </div>
+        <div style="background:var(--color-background-primary); border-radius:var(--border-radius-md); padding:10px; border:0.5px solid var(--color-border-tertiary);">
+          <div class="stat-n" style="color:#BA7517;">2</div><div class="stat-l">Rolled over</div>
+        </div>
+        <div style="background:var(--color-background-primary); border-radius:var(--border-radius-md); padding:10px; border:0.5px solid var(--color-border-tertiary);">
+          <div class="stat-n" style="color:#7F77DD;">🔥 5</div><div class="stat-l">Day streak</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <div style="display:flex; align-items:center; gap:10px; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:10px 12px;">
+          <div style="width:16px; height:16px; border-radius:50%; border:2px solid #7F77DD; flex-shrink:0;"></div>
+          <div style="flex:1;">
+            <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Read — Lecture 4: Memory Management</div>
+            <div style="font-size:11px; color:var(--color-text-secondary);">OS Fundamentals · ~45 min</div>
+          </div>
+          <span class="nb-chip tag-purple">Read</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:10px 12px;">
+          <div style="width:16px; height:16px; border-radius:50%; border:2px solid #1D9E75; flex-shrink:0;"></div>
+          <div style="flex:1;">
+            <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Solve — Problem Set 3, Q1–Q4</div>
+            <div style="font-size:11px; color:var(--color-text-secondary);">Linear Algebra · ~30 min</div>
+          </div>
+          <span class="nb-chip tag-teal">Solve</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:10px 12px;">
+          <div style="width:16px; height:16px; border-radius:50%; border:2px solid #BA7517; flex-shrink:0;"></div>
+          <div style="flex:1;">
+            <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Summarize — Chapter 7 notes</div>
+            <div style="font-size:11px; color:var(--color-text-secondary);">Data Structures · ~30 min</div>
+          </div>
+          <span class="nb-chip tag-amber">Summarize</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nb-section">
+    <div class="nb-label">Document vault mockup sketch</div>
+    <div class="nb-screen">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+        <div style="font-size:14px; font-weight:500; color:var(--color-text-primary);">Your documents</div>
+        <div style="display:flex; align-items:center; gap:6px; font-size:12px; color:var(--color-text-info); cursor:pointer;"><i class="ti ti-upload" style="font-size:14px;"></i> Upload</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <div style="display:flex; align-items:center; gap:10px; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:10px 12px;">
+          <i class="ti ti-file-type-pdf" style="font-size:22px; color:#D85A30;"></i>
+          <div style="flex:1;">
+            <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">OS_Syllabus_2025.pdf</div>
+            <div style="font-size:11px; color:var(--color-text-secondary);">12 topics extracted · 3 weeks of tasks</div>
+          </div>
+          <span class="nb-chip tag-teal">✓ Parsed</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:10px 12px;">
+          <i class="ti ti-file-type-ppt" style="font-size:22px; color:#378ADD;"></i>
+          <div style="flex:1;">
+            <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">LinAlg_Week4_Slides.pptx</div>
+            <div style="font-size:11px; color:var(--color-text-secondary);">8 topics extracted · processing…</div>
+          </div>
+          <span class="nb-chip tag-amber">⟳ Parsing</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:10px 12px; opacity:0.6;">
+          <i class="ti ti-file-type-doc" style="font-size:22px; color:#888780;"></i>
+          <div style="flex:1;">
+            <div style="font-size:13px; font-weight:500; color:var(--color-text-primary);">DSA_Notes_Final.docx</div>
+            <div style="font-size:11px; color:var(--color-text-secondary);">Queued</div>
+          </div>
+          <span class="nb-chip" style="background:var(--color-background-secondary);color:var(--color-text-secondary);">Queued</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nb-section">
+    <div class="nb-label">UX micro-interactions to build</div>
+    <div class="grid2">
+      <div class="nb-card">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;"><i class="ti ti-checkbox" style="font-size:18px; color:#1D9E75;"></i><span style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Task completion</span></div>
+        <div style="font-size:12px; color:var(--color-text-secondary);">Strikethrough animation + prep score increments live. Rollover engine nudge if overdue.</div>
+      </div>
+      <div class="nb-card">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;"><i class="ti ti-upload" style="font-size:18px; color:#378ADD;"></i><span style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Document upload</span></div>
+        <div style="font-size:12px; color:var(--color-text-secondary);">Drag-and-drop zone with live webhook progress — "Extracting topics (7/12)…" spinner.</div>
+      </div>
+      <div class="nb-card">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;"><i class="ti ti-bell" style="font-size:18px; color:#BA7517;"></i><span style="font-size:13px; font-weight:500; color:var(--color-text-primary);">PWA push notif</span></div>
+        <div style="font-size:12px; color:var(--color-text-secondary);">"You have 2 tasks due today" morning brief. Streak reminder if no activity by 8pm.</div>
+      </div>
+      <div class="nb-card">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;"><i class="ti ti-chart-bar" style="font-size:18px; color:#7F77DD;"></i><span style="font-size:13px; font-weight:500; color:var(--color-text-primary);">Prep score chart</span></div>
+        <div style="font-size:12px; color:var(--color-text-secondary);">Recharts area chart per course, colored by urgency to exam. Hover shows weekly breakdown.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nb-section">
+    <div class="nb-label">Typography & color system</div>
+    <div class="nb-card">
+      <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:14px;">
+        <div><div style="font-size:22px; font-weight:500; color:var(--color-text-primary);">Heading</div><div style="font-size:11px;color:var(--color-text-tertiary);">22px / 500</div></div>
+        <div><div style="font-size:16px; font-weight:500; color:var(--color-text-primary);">Section title</div><div style="font-size:11px;color:var(--color-text-tertiary);">16px / 500</div></div>
+        <div><div style="font-size:13px; color:var(--color-text-secondary);">Body / task label</div><div style="font-size:11px;color:var(--color-text-tertiary);">13px / 400</div></div>
+        <div><div style="font-size:11px; color:var(--color-text-tertiary);">Meta / timestamp</div><div style="font-size:11px;color:var(--color-text-tertiary);">11px / 400</div></div>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#7F77DD;"></div>
+          <span style="font-size:10px; color:var(--color-text-tertiary);">Primary</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#1D9E75;"></div>
+          <span style="font-size:10px; color:var(--color-text-tertiary);">Complete</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#BA7517;"></div>
+          <span style="font-size:10px; color:var(--color-text-tertiary);">Overdue</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#D85A30;"></div>
+          <span style="font-size:10px; color:var(--color-text-tertiary);">Urgent</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#378ADD;"></div>
+          <span style="font-size:10px; color:var(--color-text-tertiary);">Info / AI</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#888780;"></div>
+          <span style="font-size:10px; color:var(--color-text-tertiary);">Neutral</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:1rem;">
+    <button onclick="sendPrompt('Build a full interactive mockup of the NeupBase daily brief screen')" style="font-size:13px; padding:8px 20px; border-radius:20px; cursor:pointer;">Build full daily brief mockup ↗</button>
+    <button onclick="sendPrompt('Design the NeupBase document upload and parsing screen')" style="font-size:13px; padding:8px 20px; border-radius:20px; cursor:pointer; margin-left:8px;">Design the document vault ↗</button>
+  </div>
+
+</div>
